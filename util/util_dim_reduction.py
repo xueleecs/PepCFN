@@ -1,10 +1,4 @@
-# ---encoding:utf-8---
-# @Time : 2021.01.28
-# @Author : Waiting涙
-# @Email : 1773432827@qq.com
-# @IDE : PyCharm
-# @File : util_dim_reduction.py
-
+# copy from https://github.com/Ruheng-W/PepBCL.git
 
 from sklearn.manifold import TSNE
 from sklearn.datasets import load_digits
