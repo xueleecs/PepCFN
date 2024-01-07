@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-# @Time    : 2021/5/7 16:50
-# @Author  : WANG Ruheng
-# @Email   : blwangheng@163.com
-# @IDE     : PyCharm
-# @FileName: data_loader_protBert.py
 
 import argparse
 
