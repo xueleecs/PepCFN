@@ -1,9 +1,4 @@
-# ---encoding:utf-8---
-# @Time : 2020.12.24
-# @Author : Waiting涙
-# @Email : 1773432827@qq.com
-# @IDE : PyCharm
-# @File : util_file.py
+# copy from https://github.com/Ruheng-W/PepBCL.git
 
 def toNum(l):
     l = [float(i) for i in l]
