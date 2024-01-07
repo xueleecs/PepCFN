@@ -1,11 +1,4 @@
-# ---encoding:utf-8---
-# @Time : 2020.12.26
-# @Author : Waiting涙
-# @Email : 1773432827@qq.com
-# @IDE : PyCharm
-# @File : util_metric.py
-
-
+# copy from https://github.com/Ruheng-W/PepBCL.git
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve, precision_recall_curve, average_precision_score
 from sklearn.metrics import auc
