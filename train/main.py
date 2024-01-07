@@ -396,7 +396,7 @@ def load_config():
        '''
 
     '''Set the required variables in the configuration'''
-    train_name = 'ACPred-LAF'
+    train_name = 'PepPFN'
     path_config_data = None
     path_train_data, path_test_data = select_dataset()
 
@@ -413,10 +413,8 @@ def load_config():
     # flooding method
     b = 0.06
 
-    if config.model_name == 'ACPred_LAF_Basic' or config.model_name == 'ACPred_LAF_MSE':
-        config.if_multi_scaled = False
-    else:
-        config.if_multi_scaled = True
+
+    config.if_multi_scaled = True
 
     '''initialize result folder'''
     result_folder = '/' + config.learn_name
@@ -508,4 +506,3 @@ if __name__ == '__main__':
 
     time_end = time.time()
     print('total time cost', time_end - time_start, 'seconds')
-
