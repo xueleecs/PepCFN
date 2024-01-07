@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-# @Time    : 2021/5/7 16:50
-# @Author  : WANG Ruheng
-# @Email   : blwangheng@163.com
-# @IDE     : PyCharm
-# @FileName: data_loader_protBert.py
+# copy from https://github.com/Ruheng-W/PepBCL.git
 
 import pickle
 import torch
@@ -101,24 +96,3 @@ def load_data(config):
 
     return data_train, data_test
 
-
-# if __name__ == '__main__':
-#     '''
-#     check loading tsv data
-#     '''
-#     config = config.get_train_config()
-#
-#     token2index = pickle.load(open('../data/residue2idx.pkl', 'rb'))
-#     config.token2index = token2index
-#     print('token2index', token2index)
-#
-#     config.path_train_data = '../data/ACP_dataset/tsv/ACP-Mixed-80-train.tsv'
-#     sequences, labels = util_file.load_tsv_format_data(config.path_train_data)
-#     token_list, max_len = transform_token2index(sequences, config)
-#     data = make_data_with_unified_length(token_list, labels, config)
-#     data_loader = construct_dataset(data, config)
-#
-#     print('-' * 20, '[data_loader]: check data batch', '-' * 20)
-#     for i, batch in enumerate(data_loader):
-#         input, label = batch
-#         print('batch[{}], input:{}, label:{}'.format(i, input.shape, label.shape))
